@@ -1,40 +1,55 @@
-This is a reproducible code repository for paper "Distributed Equilibrium Computation for Constrained Fisher Markets via Stochastic
-Envelope Subgradient Methods" written by Long et. al. This version has private datasets owned by CEI (VinUniversity) and VinSmart Future along with processed data and eda notebooks. We also includes so we only include algorithm code, experiment results and visualizations.
+# Stochastic Subgradient Methods – Experiment Results (EV)
 
-## Repository Structure
+This repository provides a reproducible implementation for the paper:
+
+> **"Distributed Equilibrium Computation for Constrained Fisher Markets via Stochastic Envelope Subgradient Methods"**  
+> by Long et al.
+
+⚠️ **Note:**  
+This version has private datasets owned by CEI (VinUniversity) and VinSmart Future along with processed data and eda notebooks.
+This repository focuses on:
+- Algorithm implementations  
+- Experiment pipelines  
+- Results and visualizations  
+
+---
+
+## 📦 Repository Structure
+
+```text
 Stochastic_Subgradient_Methods_Experiment_Results_EV/
 │
 ├── README.md                  # Project overview, setup, usage
-├── requirements.txt           # Python dependencies (or environment.yml)
+├── requirements.txt           # Python dependencies
 ├── .gitignore
 ├── LICENSE
 │
 ├── data/
-│   ├── processed/             # Cleaned / transformed data 
-│   ├── raw/                   # Original data
-│   └── valuation_matrices/    # Used for testing algos on real cases
-|  
-├── docs/
-│   ├── Experiment Notes.docx
-|
-├── example_IEEE_papers/       # Template for writing
-|
-├── experiments/               # Experiment pipelines and outputs
-│   ├── eda_notebooks/         # Exploratory Data Analysis notebooks
-│   └── figures/               # Visualizarions from experiments
-│   └── results/               # Algo results on real cases w/ params
-│   └── scripts/               # Experiment codes
-|
-├── final_figures              # Figures used in main paper
+│   ├── processed/             # Cleaned / transformed data
+│   ├── raw/                   # Original data (excluded if private)
+│   └── valuation_matrices/    # Testing data for algorithms
 │
-├── src/                       # Core source code (modular, reusable)
-│   ├── algorithms/            # Centralized solver, SPDS, DPDS
-│   │   └── cvxpy_solver.ipynb
-│   │   └── dpds_algorithm.ipynb
-│   │   └── spds_algorithm.ipynb
-|   |
-│   ├── helpers/               
-│   │   └── compute_valuation.py
-│   │   └── valuation_newdata.py
-|   |
-│   └── original.ipynb
+├── docs/
+│   └── Experiment Notes.docx
+│
+├── example_IEEE_papers/       # Paper writing templates
+│
+├── experiments/               # Experiment pipelines and outputs
+│   ├── eda_notebooks/         # Exploratory Data Analysis
+│   ├── figures/               # Generated visualizations
+│   ├── results/               # Algorithm outputs with parameters
+│   └── scripts/               # Experiment scripts
+│
+├── final_figures/             # Figures used in the paper
+│
+└── src/                       # Core source code
+    ├── algorithms/
+    │   ├── cvxpy_solver.ipynb
+    │   ├── dpds_algorithm.ipynb
+    │   └── spds_algorithm.ipynb
+    │
+    ├── helpers/
+    │   ├── compute_valuation.py
+    │   └── valuation_newdata.py
+    │
+    └── original.ipynb
