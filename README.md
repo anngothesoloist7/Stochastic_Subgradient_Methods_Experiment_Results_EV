@@ -1,9 +1,7 @@
 # Stochastic Subgradient Methods – Experiment Results (EV)
 
-This repository provides a reproducible implementation for our draft paper related to EV Charging:
+This repository provides a reproducible implementation for our draft paper related to EV Charging. Raw datasets for experiments would not be included since they are privately owned by CEI (VinUniversity) and VinSmart Future. Despite that, we included valuation matrices based on real-time charging activities in peak hours with eda notebooks.
 
-⚠️ **Note:**  
-This version has private datasets owned by CEI (VinUniversity) and VinSmart Future along with processed data and eda notebooks.
 This repository focuses on:
 - Algorithm implementations  
 - Experiment pipelines  
