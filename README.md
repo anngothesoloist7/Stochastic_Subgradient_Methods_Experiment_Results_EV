@@ -1,9 +1,6 @@
 # Stochastic Subgradient Methods – Experiment Results (EV)
 
-This repository provides a reproducible implementation for the paper:
-
-> **"Distributed Equilibrium Computation for Constrained Fisher Markets via Stochastic Envelope Subgradient Methods"**  
-> by Long et al.
+This repository provides a reproducible implementation for our draft paper related to EV Charging:
 
 ⚠️ **Note:**  
 This version has private datasets owned by CEI (VinUniversity) and VinSmart Future along with processed data and eda notebooks.
